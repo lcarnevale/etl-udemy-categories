@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-"""ETL process for gathering Udemy courses metadata by category.
+
+"""ETL process for gathering Udemy courses metadata.
 """
 
 __author__ = "Lorenzo Carnevale"
@@ -15,10 +16,10 @@ import scrapy
 class UdemyCourseSpider(scrapy.Spider):
     name = 'udemy-course'
 
-    def __init__(self, course, **kwargs):
+    def __init__(self, course_url, **kwargs):
         super().__init__(**kwargs)
         self.start_urls = [
-            f'https://www.udemy.com/course/{course}/',
+            f'{course_url}',
         ]
 
     def parse(self, response):
@@ -41,6 +42,7 @@ class UdemyCourseSpider(scrapy.Spider):
         }
 
     def __get_url(self, response):
+        # TODO("Not implemented yet")
         return "Not implemented yet"
 
     def __get_title(self, response):
@@ -62,6 +64,7 @@ class UdemyCourseSpider(scrapy.Spider):
         return float(avg_rating)
 
     def __get_rating(self, response):
+        # TODO("Not implemented yet")
         return "Not implemented yet"
 
     def __get_enrollment(self, response):
@@ -84,9 +87,11 @@ class UdemyCourseSpider(scrapy.Spider):
             strip()
 
     def __get_language(self, response):
+        # TODO("Not implemented yet")
         return "Not implemented yet"
 
     def __get_price(self, response):
+        # TODO("Not implemented yet")
         return "Not implemented yet"
 
     def __get_learning_goals(self, response):
@@ -107,7 +112,9 @@ class UdemyCourseSpider(scrapy.Spider):
         return duration_string.split(" ")[0]
 
     def __get_aticles_amount(self, response):
+        # TODO("Not implemented yet")
         return "Not implemented yet"
 
     def __get_downloadable(self, response):
+        # TODO("Not implemented yet")
         return "Not implemented yet"
