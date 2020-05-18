@@ -1,5 +1,10 @@
 # Collect Udemy course metadata
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) 
+[![PyPI pyversions](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue)](https://pypi.python.org/pypi/ansicolortags/)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
+
+![logo](docs/img/logo.png)
 
 This project is intended how a first tentative to explore the ETL procedure. As example, I aim to gather Udemy courses metadata.
 
